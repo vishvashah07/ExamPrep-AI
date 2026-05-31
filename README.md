@@ -28,7 +28,6 @@ Upload any PDF — lecture notes, textbooks, research papers — and the agent w
 | LangChain | 0.3.25 | RAG pipeline orchestration |
 | LangChain Google GenAI | 2.1.4 | Gemini LLM and embeddings |
 | LangChain Pinecone | 0.2.0 | Vector store integration |
-| LangGraph | 0.3.21 | ReAct agent framework |
 | Pinecone Client | 5.0.1 | Vector database client |
 | PyPDF | 4.3.1 | PDF parsing |
 | Pydantic | 2.9.2 | Request and response validation |
@@ -125,7 +124,7 @@ examprep-ai/
 │   └── src/
 │       ├── App.js
 │       ├── ExamPrepAgent.jsx
-│       └── index.js
+│       
 ├── .env                   # API keys — never commit this
 ├── .env.example           # Template for environment variables
 ├── .gitignore
