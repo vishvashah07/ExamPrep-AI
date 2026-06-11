@@ -281,23 +281,6 @@ Each study mode has its own dedicated LCEL chain with a mode-specific system pro
 
 ---
 
-## Resume Summary
-
-**Project:** ExamPrep AI — RAG-Powered Study Assistant
-
-**Description:** Built a full-stack AI exam preparation agent using Naive RAG architecture that ingests PDF study materials, performs semantic search via Pinecone vector database, and generates context-aware answers using Google Gemini 3 Flash Preview with anti-hallucination techniques.
-
-**Key Contributions:**
-- Architected end-to-end Naive RAG pipeline including PDF ingestion, recursive chunking (800 tokens, 80 overlap), dense vector embeddings (Gemini Embedding-001, 3072 dimensions), and cosine similarity retrieval via Pinecone Serverless
-- Built LangChain LCEL chain with 4 dedicated study modes (chat, quiz, summary, flashcard) each with mode-specific system prompts and strict context-only anti-hallucination rules including source labeling with page numbers
-- Developed FastAPI REST backend with PDF file upload endpoint, auto-ingestion pipeline, CORS middleware, and Pydantic request validation across 6 REST endpoints
-- Designed React frontend with drag-and-drop PDF upload, real-time indexing feedback, study mode switching, typing indicators, and session management
-- Resolved LangChain dependency conflicts across LangChain 0.3, LangGraph, and Pinecone client packages using Python virtual environment isolation
-
-**Tech Stack:** Python, FastAPI, LangChain, LangGraph, Pinecone, Google Gemini 3 Flash Preview, React, Uvicorn, PyPDF, Pydantic
-
----
-
 ## Environment Variables Reference
 
 | Variable | Description | Example |
@@ -308,8 +291,3 @@ Each study mode has its own dedicated LCEL chain with a mode-specific system pro
 | PINECONE_CLOUD | Cloud provider | aws |
 | PINECONE_REGION | Cloud region | us-east-1 |
 
----
-
-## License
-
-MIT License — feel free to use, modify, and distribute.
