@@ -279,15 +279,5 @@ Near-zero temperature keeps responses factual and grounded in retrieved context.
 ### Why per-mode chains
 Each study mode has its own dedicated LCEL chain with a mode-specific system prompt instead of a simple text prefix. This gives Gemini clear structural instructions per mode resulting in consistent and reliable formatting every time.
 
----
 
-## Environment Variables Reference
-
-| Variable | Description | Example |
-|---|---|---|
-| GOOGLE_API_KEY | Google AI Studio API key | AIzaSy... |
-| PINECONE_API_KEY | Pinecone API key | pcsk-... |
-| PINECONE_INDEX_NAME | Name of Pinecone index | rag-agent |
-| PINECONE_CLOUD | Cloud provider | aws |
-| PINECONE_REGION | Cloud region | us-east-1 |
 
