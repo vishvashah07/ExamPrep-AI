@@ -19,6 +19,7 @@ app = FastAPI(title="Exam Prep RAG Agent", version="2.0.0")
 
 app.add_middleware(
     CORSMiddleware,
+    "https://examprep-ai.vercel.app",
     allow_origins=["*"],
     allow_methods=["*"],
     allow_headers=["*"],
